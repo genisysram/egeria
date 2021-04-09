@@ -1,0 +1,12 @@
+language: java
+arch:
+    - amd64
+    - ppc64le
+jdk:
+- openjdk8
+- openjdk11
+sudo: false
+
+# script for build and release via Travis to Bintray
+script: 
+    - ./gradlew build
