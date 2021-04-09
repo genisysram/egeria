@@ -1,13 +1,12 @@
 language: java
-arch:
-    - amd64
-    - ppc64le
-dist: bionic    
-jdk:
-- openjdk8
-- openjdk11
-sudo: false
 
-# script for build and release via Travis to Bintray
-script: 
-    - ./gradlew build
+jdk:
+ - openjdk8
+ - openjdk11
+
+arch:
+ - amd64
+ - ppc64le
+
+script:
+ - mvn clean install
