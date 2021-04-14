@@ -9,4 +9,5 @@ arch:
  - ppc64le
 
 script:
+ -  travis_wait 20
  - ./gradlew check
